@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://cloud.189.cn/t/Jj6ZveneEVNf
+  ROM_URL: https://cloud189-henan-person.oos-hazz.ctyunapi.cn/PERSONCLOUD/101fe3cf-3531-4432-bc78-413bd93a36c8.zip?response-content-disposition=attachment%3Bfilename%3D%22MIUI12.5-CC9e-Aonly-10-20210101-LZYGSI.zip%22&x-amz-CLIENTNETWORK=UNKNOWN&x-amz-CLOUDTYPEIN=PERSON&x-amz-limit=rate%3D10240%2Cconcurrency%3D15&x-amz-CLIENTTYPEIN=WEB&Signature=cCMWQKd964Z%2BpwEz3bGGlHGzMKI%3D&x-amz-SHID=171335675&AWSAccessKeyId=532482dfdc85e5d60592&Expires=1614003966&x-amz-FSIZE=2642367645&x-amz-UID=812057828&x-amz-UFID=71422112740906071
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
@@ -61,7 +61,7 @@ jobs:
        - name: Upload GSI to BitSend
          run: |
               curl -sL https://git.io/file-transfer | sh
-              ./transfer temp final/GSI.zip
+              ./transfer gof final/GSI.zip
 
          
             
